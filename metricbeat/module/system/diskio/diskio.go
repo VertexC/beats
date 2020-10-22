@@ -107,6 +107,7 @@ func (m *MetricSet) Fetch(r mb.ReporterV2) error {
 			},
 			"io": common.MapStr{
 				"time": counters.IoTime,
+				"ops": counters.IopsInProgress,
 			},
 		}
 
